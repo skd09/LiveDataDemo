@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:padding="5sp"
+    android:background="@android:color/darker_gray">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:id="@+id/etText2"
+        android:layout_centerInParent="true"
+        android:hint="Fragment 2"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

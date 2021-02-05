@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:padding="5sp">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:id="@+id/fragment1"
+        android:layout_height="wrap_content"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:id="@+id/fragment2"
+        android:layout_below="@+id/fragment1"
+        android:layout_height="wrap_content"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:id="@+id/fragment3"
+        android:layout_below="@+id/fragment2"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_below="@+id/fragment3"
+        android:id="@+id/etText"
+        android:hint="Main Activity"
+        android:textStyle="bold"
+        android:layout_marginTop="30sp"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:imeOptions="actionDone" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etText"
+        android:id="@+id/btnChange"
+        android:layout_centerHorizontal="true"
+        android:text="change"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
